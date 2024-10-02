@@ -1,0 +1,15 @@
+<script type="module">
+  import * as mod from "/qa-test/issue-40354/ecmascript.js";
+</script>
+<script>
+  function connect() {
+    window.braveSolana.connect().then(result => {
+      console.log(result.publicKey.toString())
+    }).catch(error => {
+      console.error(error)
+    })
+  }
+</script>
+
+
+<button onclick="connect()">Solana connect</button>
